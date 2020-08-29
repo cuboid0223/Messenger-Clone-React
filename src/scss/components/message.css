@@ -10,6 +10,7 @@
   margin-left: auto;
   text-align: left !important;
   color: #FFF;
+  border-radius: 20px !important;
 }
 
 .message__userCard {
@@ -18,5 +19,19 @@
 
 .message__guestCard {
   background-color: #e9e9eb !important;
+}
+
+.message .MuiPaper-rounded {
+  border-radius: 20px;
+}
+
+.message .MuiCardContent-root:last-child {
+  padding-bottom: 3px;
+}
+
+.message .MuiCardContent-root {
+  padding-right: 8px;
+  padding-left: 8px;
+  padding-top: 3px;
 }
 /*# sourceMappingURL=message.css.map */
