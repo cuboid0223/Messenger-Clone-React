@@ -18,7 +18,7 @@ function App() {
 
   useEffect(() => {
     db.collection('messages')
-    .orderBy('timestamp', 'desc')
+    .orderBy('timestamp')
     .onSnapshot(snapshot => {
       setMessages(
         snapshot.docs.map( doc => (

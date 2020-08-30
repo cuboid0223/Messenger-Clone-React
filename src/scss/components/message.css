@@ -34,4 +34,8 @@
   padding-left: 8px;
   padding-top: 3px;
 }
+
+.message pre {
+  margin: 0px;
+}
 /*# sourceMappingURL=message.css.map */

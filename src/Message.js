@@ -12,10 +12,11 @@ const Message = forwardRef(({message, username}, ref) => {
         
        
         <div ref={ref} className={`message ${isUser && 'message__user'}`}>  {/* 如果這句留言的發布者是使用者本人 為真，那麼新增 className*/}
-            <Card className={isUser ? 'message__userCard' :'message__guestCard'}>
-                <CardContent>     
+            <pre>{!isUser && `${message.username || '不明人士'}  `}</pre> 
+            <Card className={isUser ? 'message__userCard' :'message__guestCard'}>  
+                <CardContent>             
                     <Typography color='blue' variant="h5" component="h2">
-                            {!isUser && `${message.username} : `} {message.message}
+                           {message.message}
                     </Typography> 
                 </CardContent>
             </Card>

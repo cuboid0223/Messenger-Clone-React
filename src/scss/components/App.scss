@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 50px;
 
     &__logo {
         object-fit: contain;
@@ -17,7 +18,6 @@
         display: flex;
         position: fixed;
         bottom: 0px;
-
         z-index: 1;
         background-color: #e9e9eb;
         width: 100%;
